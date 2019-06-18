@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 const cars = {
-  "Toyota": ["Yaris", "Corolla", "Camry", "Prius", "Avanza"],
+  "Toyota": ["Yaris", "Corolla", "Camry", "Prius", "Avanza","Rav"],
   "Kia": ["Cerato", "Rio"],
   "Hyundai": ["Accent", "Elantra", "Sonata", "verna"],
   "Suzuki": ["Swift", "Baleno", "Celerio"],
@@ -32,10 +32,9 @@ class App extends Component {
     //this.state.modelText=model;
     this.setState({ modelText: model });
 
-    // this.props.handleMakeChange(val);
   }
   render() {
-    //console.log(this.selectedMake , this.modelText)
+    
     return (
       <div >
         <VehicleInput handleMakeChange={this.handleMakeChange} handleModelChange={this.handleModelChange} />
